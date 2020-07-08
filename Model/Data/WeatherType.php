@@ -1,4 +1,5 @@
 <?php
+
 namespace AdeoWeb\WeatherConditions\Model\Data;
 
 use AdeoWeb\WeatherConditions\Api\Data\WeatherTypeInterface;
@@ -18,7 +19,7 @@ class WeatherType extends \Magento\Framework\Api\AbstractExtensibleObject implem
     /**
      * Set weathertype_id
      * @param string $weathertypeId
-     * @return \Adeoweb\Weatherconditions\Api\Data\WeatherTypeInterface
+     * @return \AdeoWeb\WeatherConditions\Api\Data\WeatherTypeInterface
      */
     public function setWeathertypeId($weathertypeId)
     {
@@ -37,7 +38,7 @@ class WeatherType extends \Magento\Framework\Api\AbstractExtensibleObject implem
     /**
      * Set id
      * @param string $id
-     * @return \Adeoweb\Weatherconditions\Api\Data\WeatherTypeInterface
+     * @return \AdeoWeb\WeatherConditions\Api\Data\WeatherTypeInterface
      */
     public function setId($id)
     {
@@ -46,7 +47,7 @@ class WeatherType extends \Magento\Framework\Api\AbstractExtensibleObject implem
 
     /**
      * Retrieve existing extension attributes object or create a new one.
-     * @return \Adeoweb\Weatherconditions\Api\Data\WeatherTypeExtensionInterface|null
+     * @return \AdeoWeb\WeatherConditions\Api\Data\WeatherTypeExtensionInterface|null
      */
     public function getExtensionAttributes()
     {
@@ -55,11 +56,11 @@ class WeatherType extends \Magento\Framework\Api\AbstractExtensibleObject implem
 
     /**
      * Set an extension attributes object.
-     * @param \Adeoweb\Weatherconditions\Api\Data\WeatherTypeExtensionInterface $extensionAttributes
+     * @param \AdeoWeb\WeatherConditions\Api\Data\WeatherTypeExtensionInterface $extensionAttributes
      * @return $this
      */
     public function setExtensionAttributes(
-        \Adeoweb\Weatherconditions\Api\Data\WeatherTypeExtensionInterface $extensionAttributes
+        \AdeoWeb\WeatherConditions\Api\Data\WeatherTypeExtensionInterface $extensionAttributes
     ) {
         return $this->_setExtensionAttributes($extensionAttributes);
     }
@@ -76,7 +77,7 @@ class WeatherType extends \Magento\Framework\Api\AbstractExtensibleObject implem
     /**
      * Set status
      * @param string $status
-     * @return \Adeoweb\Weatherconditions\Api\Data\WeatherTypeInterface
+     * @return \AdeoWeb\WeatherConditions\Api\Data\WeatherTypeInterface
      */
     public function setStatus($status)
     {
@@ -95,7 +96,7 @@ class WeatherType extends \Magento\Framework\Api\AbstractExtensibleObject implem
     /**
      * Set alias
      * @param string $alias
-     * @return \Adeoweb\Weatherconditions\Api\Data\WeatherTypeInterface
+     * @return \AdeoWeb\WeatherConditions\Api\Data\WeatherTypeInterface
      */
     public function setAlias($alias)
     {
@@ -114,7 +115,7 @@ class WeatherType extends \Magento\Framework\Api\AbstractExtensibleObject implem
     /**
      * Set icon
      * @param string $icon
-     * @return \Adeoweb\Weatherconditions\Api\Data\WeatherTypeInterface
+     * @return \AdeoWeb\WeatherConditions\Api\Data\WeatherTypeInterface
      */
     public function setIcon($icon)
     {
@@ -133,7 +134,7 @@ class WeatherType extends \Magento\Framework\Api\AbstractExtensibleObject implem
     /**
      * Set description
      * @param string $description
-     * @return \Adeoweb\Weatherconditions\Api\Data\WeatherTypeInterface
+     * @return \AdeoWeb\WeatherConditions\Api\Data\WeatherTypeInterface
      */
     public function setDescription($description)
     {
@@ -152,7 +153,7 @@ class WeatherType extends \Magento\Framework\Api\AbstractExtensibleObject implem
     /**
      * Set created_at
      * @param string $createdAt
-     * @return \Adeoweb\Weatherconditions\Api\Data\WeatherTypeInterface
+     * @return \AdeoWeb\WeatherConditions\Api\Data\WeatherTypeInterface
      */
     public function setCreatedAt($createdAt)
     {
@@ -171,7 +172,7 @@ class WeatherType extends \Magento\Framework\Api\AbstractExtensibleObject implem
     /**
      * Set updated_at
      * @param string $updatedAt
-     * @return \Adeoweb\Weatherconditions\Api\Data\WeatherTypeInterface
+     * @return \AdeoWeb\WeatherConditions\Api\Data\WeatherTypeInterface
      */
     public function setUpdatedAt($updatedAt)
     {

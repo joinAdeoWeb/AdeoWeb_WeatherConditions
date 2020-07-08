@@ -1,4 +1,5 @@
 <?php
+
 namespace AdeoWeb\WeatherConditions\Api\Data;
 
 interface WeatherTypeInterface extends \Magento\Framework\Api\ExtensibleDataInterface
@@ -22,7 +23,7 @@ interface WeatherTypeInterface extends \Magento\Framework\Api\ExtensibleDataInte
     /**
      * Set weathertype_id
      * @param string $weathertypeId
-     * @return \Adeoweb\Weatherconditions\Api\Data\WeatherTypeInterface
+     * @return \AdeoWeb\WeatherConditions\Api\Data\WeatherTypeInterface
      */
     public function setWeathertypeId($weathertypeId);
 
@@ -35,23 +36,23 @@ interface WeatherTypeInterface extends \Magento\Framework\Api\ExtensibleDataInte
     /**
      * Set id
      * @param string $id
-     * @return \Adeoweb\Weatherconditions\Api\Data\WeatherTypeInterface
+     * @return \AdeoWeb\WeatherConditions\Api\Data\WeatherTypeInterface
      */
     public function setId($id);
 
     /**
      * Retrieve existing extension attributes object or create a new one.
-     * @return \Adeoweb\Weatherconditions\Api\Data\WeatherTypeExtensionInterface|null
+     * @return \AdeoWeb\WeatherConditions\Api\Data\WeatherTypeExtensionInterface|null
      */
     public function getExtensionAttributes();
 
     /**
      * Set an extension attributes object.
-     * @param \Adeoweb\Weatherconditions\Api\Data\WeatherTypeExtensionInterface $extensionAttributes
+     * @param \AdeoWeb\WeatherConditions\Api\Data\WeatherTypeExtensionInterface $extensionAttributes
      * @return $this
      */
     public function setExtensionAttributes(
-        \Adeoweb\Weatherconditions\Api\Data\WeatherTypeExtensionInterface $extensionAttributes
+        \AdeoWeb\WeatherConditions\Api\Data\WeatherTypeExtensionInterface $extensionAttributes
     );
 
     /**
@@ -63,7 +64,7 @@ interface WeatherTypeInterface extends \Magento\Framework\Api\ExtensibleDataInte
     /**
      * Set status
      * @param string $status
-     * @return \Adeoweb\Weatherconditions\Api\Data\WeatherTypeInterface
+     * @return \AdeoWeb\WeatherConditions\Api\Data\WeatherTypeInterface
      */
     public function setStatus($status);
 
@@ -76,7 +77,7 @@ interface WeatherTypeInterface extends \Magento\Framework\Api\ExtensibleDataInte
     /**
      * Set alias
      * @param string $alias
-     * @return \Adeoweb\Weatherconditions\Api\Data\WeatherTypeInterface
+     * @return \AdeoWeb\WeatherConditions\Api\Data\WeatherTypeInterface
      */
     public function setAlias($alias);
 
@@ -89,7 +90,7 @@ interface WeatherTypeInterface extends \Magento\Framework\Api\ExtensibleDataInte
     /**
      * Set icon
      * @param string $icon
-     * @return \Adeoweb\Weatherconditions\Api\Data\WeatherTypeInterface
+     * @return \AdeoWeb\WeatherConditions\Api\Data\WeatherTypeInterface
      */
     public function setIcon($icon);
 
@@ -102,7 +103,7 @@ interface WeatherTypeInterface extends \Magento\Framework\Api\ExtensibleDataInte
     /**
      * Set description
      * @param string $description
-     * @return \Adeoweb\Weatherconditions\Api\Data\WeatherTypeInterface
+     * @return \AdeoWeb\WeatherConditions\Api\Data\WeatherTypeInterface
      */
     public function setDescription($description);
 
@@ -115,7 +116,7 @@ interface WeatherTypeInterface extends \Magento\Framework\Api\ExtensibleDataInte
     /**
      * Set created_at
      * @param string $createdAt
-     * @return \Adeoweb\Weatherconditions\Api\Data\WeatherTypeInterface
+     * @return \AdeoWeb\WeatherConditions\Api\Data\WeatherTypeInterface
      */
     public function setCreatedAt($createdAt);
 
@@ -128,7 +129,7 @@ interface WeatherTypeInterface extends \Magento\Framework\Api\ExtensibleDataInte
     /**
      * Set updated_at
      * @param string $updatedAt
-     * @return \Adeoweb\Weatherconditions\Api\Data\WeatherTypeInterface
+     * @return \AdeoWeb\WeatherConditions\Api\Data\WeatherTypeInterface
      */
     public function setUpdatedAt($updatedAt);
 }
