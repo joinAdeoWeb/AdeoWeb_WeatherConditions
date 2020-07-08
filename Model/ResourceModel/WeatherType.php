@@ -1,20 +1,17 @@
 <?php
+
 namespace AdeoWeb\WeatherConditions\Model\ResourceModel;
-use Magento\Framework\Model\ResourceModel\Db\AbstractDb;
-/**
- * WeatherType Resource Model
- *
- * @author      me
- */
-class WeatherType extends AbstractDb
+
+class WeatherType extends \Magento\Framework\Model\ResourceModel\Db\AbstractDb
 {
+
     /**
-     * Initialize resource
+     * Define resource model
      *
      * @return void
      */
-    public function _construct()
+    protected function _construct()
     {
-        $this->_init('adeoweb_weatherconditions_weathertype', 'WeatherType_id');
+        $this->_init('adeoweb_weatherconditions_weathertype', 'weathertype_id');
     }
 }
