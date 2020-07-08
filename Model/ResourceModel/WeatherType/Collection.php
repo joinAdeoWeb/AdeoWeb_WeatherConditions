@@ -1,23 +1,25 @@
 <?php
-namespace AdeoWeb\WeatherConditions\Model\ResourceModel\WeatherType;
-use Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection;
 
-/**
- * WeatherType Resource Model Collection
- *
- * @author      me
- */
-class Collection extends AbstractCollection
+namespace AdeoWeb\WeatherConditions\Model\ResourceModel\WeatherType;
+
+class Collection extends \Magento\Framework\Model\ResourceModel\Db\Collection\AbstractCollection
 {
+
     /**
-     * Initialize resource collection
+     * @var string
+     */
+    protected $_idFieldName = 'weathertype_id';
+
+    /**
+     * Define resource model
      *
      * @return void
      */
-    public function _construct()
+    protected function _construct()
     {
         $this->_init(
-        'AdeoWeb\WeatherConditions\Model\WeatherType',
-        'AdeoWeb\WeatherConditions\Model\ResourceModel\WeatherType');
+            \AdeoWeb\WeatherConditions\Model\WeatherType::class,
+            \AdeoWeb\WeatherConditions\Model\ResourceModel\WeatherType::class
+        );
     }
 }
