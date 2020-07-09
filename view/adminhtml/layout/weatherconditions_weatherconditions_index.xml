@@ -7,10 +7,6 @@
   </referenceBlock>
   <body>
       <referenceContainer name="content">
-
-
-
-
         <block class="AdeoWeb\WeatherConditions\Block\Adminhtml\WeatherType" name="adeoweb_weathertype_grid">
                         <block class="Magento\Backend\Block\Widget\Grid" name="adeoweb_weathertype_grid.grid" as="grid">
                             <arguments>
@@ -35,10 +31,37 @@
                                         <argument name="header_css_class" xsi:type="string">col-id</argument>
                                     </arguments>
                                 </block>
+                                <block class="Magento\Backend\Block\Widget\Grid\Column" as="status">
+                                    <arguments>
+                                        <argument name="header" xsi:type="string" translate="true">Status</argument>
+                                        <argument name="index" xsi:type="string">status</argument>
+                                        <argument name="type" xsi:type="string">text</argument>
+                                        <argument name="column_css_class" xsi:type="string">col-id</argument>
+                                        <argument name="header_css_class" xsi:type="string">col-id</argument>
+                                    </arguments>
+                                </block>
                                 <block class="Magento\Backend\Block\Widget\Grid\Column" as="alias">
                                     <arguments>
                                         <argument name="header" xsi:type="string" translate="true">Alias</argument>
                                         <argument name="index" xsi:type="string">alias</argument>
+                                        <argument name="type" xsi:type="string">text</argument>
+                                        <argument name="column_css_class" xsi:type="string">col-id</argument>
+                                        <argument name="header_css_class" xsi:type="string">col-id</argument>
+                                    </arguments>
+                                </block>
+                                <block class="Magento\Backend\Block\Widget\Grid\Column" as="icon">
+                                    <arguments>
+                                        <argument name="header" xsi:type="string" translate="true">Icon</argument>
+                                        <argument name="index" xsi:type="string">icon</argument>
+                                        <argument name="type" xsi:type="string">text</argument>
+                                        <argument name="column_css_class" xsi:type="string">col-id</argument>
+                                        <argument name="header_css_class" xsi:type="string">col-id</argument>
+                                    </arguments>
+                                </block>
+                                <block class="Magento\Backend\Block\Widget\Grid\Column" as="description">
+                                    <arguments>
+                                        <argument name="header" xsi:type="string" translate="true">Description</argument>
+                                        <argument name="index" xsi:type="string">description</argument>
                                         <argument name="type" xsi:type="string">text</argument>
                                         <argument name="column_css_class" xsi:type="string">col-id</argument>
                                         <argument name="header_css_class" xsi:type="string">col-id</argument>
@@ -65,14 +88,7 @@
                             </block>
                         </block>
                     </block>
-
-
-
-
-
-
           <block class="Magento\Backend\Block\Template" name="test" template="AdeoWeb_WeatherConditions::weatherconditions.phtml"/>
       </referenceContainer>
-          <uiComponent name="weatherconditions_weathertype_listing"/>
   </body>
 </page>

@@ -3,19 +3,4 @@
 	<preference for="AdeoWeb\WeatherConditions\Api\WeatherTypeRepositoryInterface" type="AdeoWeb\WeatherConditions\Model\WeatherTypeRepository"/>
 	<preference for="AdeoWeb\WeatherConditions\Api\Data\WeatherTypeInterface" type="AdeoWeb\WeatherConditions\Model\Data\WeatherType"/>
 	<preference for="AdeoWeb\WeatherConditions\Api\Data\WeatherTypeSearchResultsInterface" type="Magento\Framework\Api\SearchResults"/>
-
-	<type name="Magento\Framework\View\Element\UiComponent\DataProvider\CollectionFactory">
-        <arguments>
-            <argument name="collections" xsi:type="array">
-                <item name="adeoweb_weatherconditions_weathertype_listing_data_source" xsi:type="string">AdeoWeb\WeatherConditions\Model\ResourceModel\WeatherType\Collection</item>
-            </argument>
-        </arguments>
-    </type>
-    <virtualType name="AdeoWeb\WeatherConditions\Model\ResourceModel\WeatherType\Collection" type="Magento\Framework\View\Element\UiComponent\DataProvider\SearchResult">
-        <arguments>
-            <argument name="mainTable" xsi:type="string">adeoweb_weatherconditions_wheathertype</argument>
-            <argument name="resourceModel" xsi:type="string">AdeoWeb\WeatherConditions\Model\ResourceModel\WeatherType</argument>
-        </arguments>
-    </virtualType>
-
 </config>
